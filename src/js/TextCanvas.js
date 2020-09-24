@@ -29,7 +29,7 @@ window.addEventListener('mouseout', function (event){
 })
 ctx.fillStyle = 'blue';
 ctx.font = '20px Verdana';
-ctx.fillText('NC News is my first attempt at a project.', 0, 50);
+ctx.fillText('Blue Moon', 0, 50);
 //get's a rect and stores how many pixels are in it in arr.
 
 const textImagePixelData = ctx.getImageData(0,0,100,100)
@@ -47,8 +47,8 @@ class Particle {
 
     draw(){
         ctx.fillStyle = 'white';
-        ctx.shadowColor = 'red'
-        ctx.shadowBlur = 0;
+        ctx.shadowColor = 'blue'
+        ctx.shadowBlur = 1;
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI*2)
         ctx.closePath();
